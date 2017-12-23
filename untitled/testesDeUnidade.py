@@ -21,7 +21,7 @@ class TestaGenerico(unittest.TestCase):
 
     def testeNomeArquivo(self):
 
-        stringAuxiliar = '<module name="genericcode.py">'
+        stringAuxiliar = '<module name="generic.py">'
         self.assertIn(stringAuxiliar, listaVXL)
 
     def testeMetodosClasse(self):

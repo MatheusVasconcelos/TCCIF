@@ -227,11 +227,30 @@ def funcaoExemplo2(parametro):
     variavelLocal = 20
     return variavelLocal
 
+def testeClasseEmFuncao():
+
+    class ClasseInternaDaFuncao(object):
+
+        atributoClasseFuncao = 1
+
+        def imprimirMensagem(self, mensagemFuncao):
+            return mensagemFuncao
+        # Comentario de classe interna em função
+
 # Usando Classe
 
 class Calculadora(object):
 
+    atributoClasse = 1
     # Comentario de classe
+
+    class ClasseInterna(object):
+
+        atributoClasseInterna = 1
+
+        def imprimir(self, mensagem):
+            return mensagem
+        #Comentario de classe interna
 
     def soma(self, a, b):
         # Comentário de método da classe

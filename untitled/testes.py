@@ -366,10 +366,10 @@ def d(s):
 from os import walk
 s = []
 allFiles = ""
-myPath = 'C:/Users/mathe/Downloads/Tcc_IFPB-master/untitled/arquivosPython'
+myPath = 'C:/Users/mathe/Downloads/Tcc_IFPB-master/untitled'
 for root, dirs, files in walk(myPath):
     for file in files:
-        if file.endswith('genericcode.py'):
+        if file.endswith('codigoMenor.py'):
             openFile = open(root+"/"+file, "r")
             for lines in openFile.readlines():
                 allFiles += lines
